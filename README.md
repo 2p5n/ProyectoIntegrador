@@ -1,7 +1,7 @@
 ## ProyectoIntegrador - Base de Datos a partir de Dataset
 Repositorio Tecnico con resolucion y documentacion del proceso de limpiar y levantar un DataSet a una base de datos.
 
-##Estructura
+## Estructura
 * Informe Tecnico
 * Analisis de Datos
 * Limpieza
