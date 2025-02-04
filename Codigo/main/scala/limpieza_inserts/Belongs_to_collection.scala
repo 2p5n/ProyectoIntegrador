@@ -39,11 +39,6 @@ object Belongs_to_collection extends App {
     // Se imprime el número total de filas después del filtrado.
     println(s"Total de filas después de filtrar: ${datosFiltrados.size}")
 
-    // Función para parsear cadenas JSON a un objeto de tipo T utilizando un lector implícito.
-    def parsearJson[T](jsonStr: String)(implicit reads: Reads[T]): Option[T] = {
-      Try(Json.parse(jsonStr).as[T]).toOption
-    }
-
     // Se mapea cada fila filtrada para extraer el ID de la película y su objeto JSON asociado con la colección.
     val belongsToCollectionData = datosFiltrados.flatMap { fila =>
       for {
